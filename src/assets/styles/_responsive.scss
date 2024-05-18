@@ -1,0 +1,39 @@
+$xs-screen: 360px;
+$sm-screen: 576px;
+$md-screen: 720px;
+$xl-screen: 1280px;
+$xxl-screen: 1920px;
+
+@media (min-width: $sm-screen) {
+  #app {
+    .card-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: $md-screen) {
+  #app {
+    .card-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media (min-width: $xl-screen) {
+  #app {
+    .card-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: $xxl-screen) {
+  #app {
+    .card-list {
+      // grid-template-columns: repeat(5, 1fr);
+      // 1920 font 16 => 1 item = 348.797px ~ 22rem
+      grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "./assets/styles/variables";
+@import "./assets/styles/responsive";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  width: auto;
+  font-family: $fontFamily;
+}
+
+body {
+  font-family: $fontFamily;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: $primary-color;
+  padding: 1rem;
+}
+
+#main-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: $backround-color;
+
+  main {
+    min-height: calc(100vh - 68px - 68px);
+    padding: 1rem;
+  }
+}
