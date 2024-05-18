@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 0.5rem;
 }
 
 header {
@@ -48,9 +49,13 @@ nav.nav a {
   header {
     flex-direction: column;
     justify-content: start;
-    gap: 0.5rem;
+    gap: 4px;
+    padding: 0.5rem;
   }
   nav.nav {
+    gap: 8px;
+    display: flex;
+    justify-content: space-between;
     & a {
       background: unset;
       color: #eff2f5;
