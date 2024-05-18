@@ -41,7 +41,7 @@ nav.nav a {
   cursor: pointer;
   transition: border-color 0.25s;
   color: #273566;
-  background: #fff;
+  background: #eff2f5;
 }
 
 @media (max-width: 576px) {
@@ -53,7 +53,7 @@ nav.nav a {
   nav.nav {
     & a {
       background: unset;
-      color: #fff;
+      color: #eff2f5;
       padding: 4px;
     }
   }
