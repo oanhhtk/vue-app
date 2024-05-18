@@ -32,9 +32,9 @@ header {
 }
 
 nav.nav a {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 1px solid transparent;
-  padding: 0.4em 1em;
+  padding: 0.5rem;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -42,5 +42,20 @@ nav.nav a {
   transition: border-color 0.25s;
   color: #273566;
   background: #fff;
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.5rem;
+  }
+  nav.nav {
+    & a {
+      background: unset;
+      color: #fff;
+      padding: 4px;
+    }
+  }
 }
 </style>
